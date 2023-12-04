@@ -9,118 +9,120 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header>
-        <div>
-            <!-- creating hero banner -->
-            <video autoplay muted loop plays-inline>
-                <source src="images/header-video.mp4" type="video/mp4">
-            </video>
-            <!-- logo display -->
-            <img src="images/logo.png" alt="logo" class="img-fluid w-1 position-absolute top-0 m-3">
-            <!-- navigation bar -->
-            <ul class="nav justify-content-end position-absolute top-0 end-0 px-2 pt-2">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="work.html">WORK</a>
-                </li>
-                <!-- search section -->
-                <li>
-                    <div class="search-container">
-                        <button class="btn btn-primary search-btn" onclick="toggleSearchForm()">Open Search</button>
-                    </div>
-                </li>
+    <header w-100>
+        <!-- logo display -->
+        <img src="images/logo.png" alt="logo" class="position-absolute position-absolute top-0 start-0 m-2">
+        <!-- navigation bar -->
+        <ul class="nav justify-content-end position-absolute top-0 end-0 px-2 pt-2">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">WORK</a>
+            </li>
+            <!-- search section -->
+            <li>
+              <div class="search-container">
+                <button class="btn btn-primary search-btn" onclick="toggleSearchForm()">Open Search</button>
+              </div>
+            </li>
             </ul>
-        </div>
-        <!-- header content -->
-        <div class="header-h">
-          <h1>Ready to explore?</h1>
-        </div>
-        <div class="header-p">
-          <p>Commence on a journey through my design world, where we can delve into its intricacies and work together to enhance and elevate every aspect.</p>
-        </div>
+        
+       
     </header>
     <main>
-      <!-- creating quote section -->
-      <div class="quote-section">
-          <div class="quote">
-          <div class="line-1"><h1>Every great design</h1></div>
-          <div class="line-2"><h1>begins with </h1></div>
-          <div class="line-3"><h1>an even better story.</h1></div>
-        </div>
-        <div class="citation">
-          <div class="author"><h2>~Lorinda Memo</h2></div>
-        </div>
-      </div>
-      <!-- gallery section -->
-      <div class="gallery">
-        <div class="gallery-heading">
-          <h1>GALLERY</h1>
-        </div>
-        <div class="gallery-section">
-          <div><img src="images/gallery-1.png" alt="Modern-mettalics"></div>
-          <div><img src="images/gallery-2.jpg" alt="chrome-hand-1"></div>
-          <div><img src="images/gallery-3.jpg" alt="chrome-hand-2"></div>
-          <div><p>Step into my creative realm, where you can immerse yourself in my unique design style and portfolio.</p></div>
-          <div><p>Take a journey through the displays of my work, each piece a testament to my creativity and passion. Feel free to explore and experience the essence of my artistic expression.</p></div>
-        </div>
-      </div>
-      <!-- portfolio section -->
-      <div class="portfolio-section">
-        <div class="vision">
-          <div class="vision-heading">
-            <h1>VISION</h1>
+        <section>
+          <video autoplay muted loop plays-inline class="w-100">
+            <source src="images/header-video.mp4" type="video/mp4">
+        </video>
+        <!-- header content -->
+        <div class="header-content row">
+          <div class="header-h position-absolute bottom-0 start-0 col-2 text-light">
+            <div class="header-h-1"><h1>Ready to</h1></div>
+            <div class="header-h-2"><h1>Explore?</h1></div>
           </div>
-          <div class="vision-paragraph">
-            <p>My vision is to positively impact people's lives through my passion. I consistently refine my art, staying abreast of modern design standards while remaining true to my artistic roots. Each day, I strive to sculpt my design style, aiming to offer a diverse range of artistic expressions to like-minded individuals who share my passion.</p>
+          <div class="header-p position-absolute bottom-0 end-0 col-3 text-light">
+            <p>Commence on a journey through my design world, where we can delve into its intricacies and work together to enhance and elevate every aspect.</p>
           </div>
-          <div class="vision-image">
+        </div>
+          <!-- creating quote section -->
+          <div class="quote-section bg-black text-light row">
+            <div class="quote col-4">
+              <h1>Every great design begins with an even better story.</h1>
+            </div>
+            <div class="citation">
+              <div class="author text-end"><h2>~Lorinda Memo</h2></div>
+            </div>
+          </div>
+          <!-- gallery section -->
+          <div class="gallery">
+            <div class="gallery-heading">
+              <h1 class="text-center display-1">GALLERY</h1>
+            </div>
+          <div class="gallery-section">
+            <div><img src="images/gallery-1.png" alt="Modern-mettalics"></div>
+            <div><img src="images/gallery-2.jpg" alt="chrome-hand-1"></div>
+            <div><img src="images/gallery-3.jpg" alt="chrome-hand-2"></div>
+            <div><p>Step into my creative realm, where you can immerse yourself in my unique design style and portfolio.</p></div>
+            <div><p>Take a journey through the displays of my work, each piece a testament to my creativity and passion. Feel free to explore and experience the essence of my artistic expression.</p></div>
+          </div>
+        </div>
+        <!-- portfolio section -->
+        <div class="portfolio-section">
+          <div class="vision">
+            <div class="vision-heading">
+              <h1>VISION</h1>
+            </div>
+            <div class="vision-paragraph">
+              <p>My vision is to positively impact people's lives through my passion. I consistently refine my art, staying abreast of modern design standards while remaining true to my artistic roots. Each day, I strive to sculpt my design style, aiming to offer a diverse range of artistic expressions to like-minded individuals who share my passion.</p>
+            </div>
+            <div class="vision-image">
               <img src="images/visionball.jpg" alt="vision">
+            </div>
+          </div>
+          <div class="explore">
+            <div class="explore-image">
+              <img src="images/portfolio.jpg" alt="portfolio">
+            </div>
+            <div class="ready-to-roll">
+              <div class="roll-h1">
+                <h1>READY TO ROLL?</h1>
+              </div>
+              <div class="roll-h2">
+                <h2>Check my portfolio</h2>
+              </div>
+            </div>
+            <div class="explore-content">
+              <div class="explore-paragraph">
+                <p>There is always the latent power of talent waiting to be discovered and harnessed for improvement.</p>
+              </div>
+              <div class="explore-button">
+                <button>EXPLORE MORE</button>
+              </div>
+            </div>
+          </div>
+          <!-- contact page link section -->
+          <div class="journey">
+            <div class="journey-heading">
+              <div class="h1-line-1">
+                <h1>ARE YOU READY TO EMBARK ON</h1>
+              </div>
+              <div class="h1-line-2">
+                <h1>AN EXCITING JOURNEY?</h1>
+              </div>
+            </div>
+            <div class="journey-button">
+              <button>LET'S CONNECT</button>
+            </div>
           </div>
         </div>
-        <div class="explore">
-          <div class="explore-image">
-            <img src="images/portfolio.jpg" alt="portfolio">
-          </div>
-          <div class="ready-to-roll">
-            <div class="roll-h1">
-              <h1>READY TO ROLL?</h1>
-            </div>
-            <div class="roll-h2">
-              <h2>Check my portfolio</h2>
-            </div>
-          </div>
-          <div class="explore-content">
-            <div class="explore-paragraph">
-              <p>There is always the latent power of talent waiting to be discovered and harnessed for improvement.</p>
-            </div>
-            <div class="explore-button">
-              <button>EXPLORE MORE</button>
-            </div>
-          </div>
-        </div>
-        <!-- contact page link section -->
-        <div class="journey">
-          <div class="journey-heading">
-            <div class="h1-line-1">
-              <h1>ARE YOU READY TO EMBARK ON</h1>
-            </div>
-            <div class="h1-line-2">
-              <h1>AN EXCITING JOURNEY?</h1>
-            </div>
-          </div>
-          <div class="journey-button">
-            <button>LET'S CONNECT</button>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
     <footer>
       <div class="lifestyle">

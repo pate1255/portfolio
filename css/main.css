@@ -1,0 +1,8 @@
+.gallery-heading h1{
+    color: black; /* Text color of the heading */
+    text-align: center;
+    margin: 0;
+    width: 100vw; /* Set the height to cover the full screen */
+    /* box-sizing: border-box; */
+    font-size: 20rem;
+}

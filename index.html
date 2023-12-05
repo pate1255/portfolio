@@ -66,7 +66,7 @@
               <h1 class="text-center display-1">GALLERY</h1>
             </div>
           <div class="gallery-content-section">
-            <div class="gallery-section-1 row row-gap-5 justify-content-center mx-1">
+            <div class="gallery-section-1 row row-gap-5 justify-content-center">
               <div class="column1 col-3">
                 <img src="images/gallery-1.png" alt="Modern-mettalics" class="img-fluid">
                 <p class="align-self-end fs-5">Take a journey through the displays of my work, each piece a testament to my creativity and passion. Feel free to explore and experience the essence of my artistic expression.</p>
@@ -83,40 +83,44 @@
         </div>
         <!-- portfolio section -->
         <div class="portfolio-section">
-          <div class="portfolio-container container-md"></div>
-          <div class="vision row no-gutters">
-            <div class="vision-content col-7 bg-black">
+          <div class="portfolio-container container-sm"></div>
+          <div class="vision row no-gutters g-0">
+            <div class="vision-content col-8 bg-black">
               <h1 class="text-light mt-4 display-1 mx-3">VISION</h1>
               <p class="text-light mx-3 p">My vision is to positively impact people's lives through my passion. I consistently refine my art, staying abreast of modern design standards while remaining true to my artistic roots. Each day, I strive to sculpt my design style, aiming to offer a diverse range of artistic expressions to like-minded individuals who share my passion.</p>
             </div>
-            <div class="vision-image col-5 img-fluid">
+            <div class="vision-image col-4 img-fluid">
               <img src="images/visionball.jpg" alt="vision">
             </div>
           </div>
-          <div class="explore row mt-5">
+          <div class="explore row no-gutters g-0">
             <div class="explore-image col-md-6">
               <img src="images/portfolio.jpg" alt="portfolio">
             </div>
             <div class="explore-roll-content col-md-6">
-              <div class="ready-to-roll mt-3">
-                  <h1>READY TO ROLL?</h1>
-                  <h2>Check my portfolio</h2>
-              </div>
-              <div class="explore-content">
-                  <p>There is always the latent power of talent waiting to be discovered and harnessed for improvement.</p>
-                  <button>EXPLORE MORE</button>
+              <div class="explore-container container">
+                <div class="row no-gutters gap-0">
+                  <div class="col-md-12">
+                    <div class="ready-to-roll mt-3">
+                      <h1 class="text-center display-1">READY TO ROLL?</h1>
+                      <h2 class="text-end  border-bottom border-4">Check my portfolio.</h2>
+                    </div>
+                    <div class="explore-content p-3">
+                      <p>There is always the latent power of talent waiting to be discovered and harnessed for improvement.</p>
+                      <button>EXPLORE MORE</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- contact page link section -->
-          <div class="journey">
-            <div class="journey-heading">
-              <div class="h1-line-1">
-                <h1>ARE YOU READY TO EMBARK ON</h1>
-              </div>
-              <div class="h1-line-2">
-                <h1>AN EXCITING JOURNEY?</h1>
-              </div>
+          <div class="journey text-center p-5">
+            <div class="h1-line-1">
+              <h1>ARE YOU READY TO EMBARK ON</h1>
+            </div>
+            <div class="h1-line-2">
+              <h1>AN EXCITING JOURNEY?</h1>
             </div>
             <div class="journey-button">
               <button>LET'S CONNECT</button>
@@ -125,37 +129,44 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="lifestyle">
-        <h1>Desinging is a lifestyle.</h1>
+    <footer class="bg-dark-subtle container">
+      <div class="footer-row row">
+        <div class="lifestyle col-6">
+          <h1 class="display-1">Desinging is a lifestyle.</h1>
+        </div>
+        <div class="footer-nav col-6 justify-content-end align-items-end">
+          <ul class="nav d-flex row">
+            <li class="nav-item">
+              <a class="nav-link active p-0" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0" href="work.html">WORK</a>
+          </li>
+        </ul>
       </div>
-      <div class="footer-nav">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="work.html">WORK</a>
-          </li>
-      </ul>
-      </div>
-      <div class="social-profiles">
-        <div class="social-heading"><h1>Checkout My Social Profiles</h1></div>
-        <div class="social-icons">
-          <div class="instagram"><img src="images/instagram.png" alt="instagram"></div>
-          <div class="linkedin"><img src="images/linked-in.png" alt="linked-in"></div>
-          <div class="facebook"><img src="images/facebook.png" alt="facebook"></div>
+    </div>
+    <div class="bottom-footer container">
+      <div class="footer-bottom-row row">
+        <div class="copyright col-6 align-self-end">
+          <h2>© Dhruvi Patel, 2023</h2>
+        </div>
+        <div class="social-profiles col-6">
+          <div class="social-heading"><h1>Checkout My Social Profiles</h1></div>
+          <div class="social-icons d-flex justify-content-end">
+            <div class="instagram"><img src="images/instagram.png" alt="instagram" class="w-1"></div>
+            <div class="linkedin"><img src="images/linked-in.png" alt="linked-in"></div>
+            <div class="facebook"><img src="images/facebook.png" alt="facebook"></div>
+          </div>
         </div>
       </div>
-      <div class="copyright">
-        <h2>© Dhruvi Patel, 2023</h2>
-      </div>
+    </div>
+      
     </footer>
     <!-- Bootstrap Javascript -->
     <h1>Hello, world!</h1>

@@ -20,7 +20,7 @@
       .grey-section{
         background-color: #333333;
         color: white; /* Set text color to white for better visibility */
-        padding: 20px; /* Add padding for spacing inside the section */   
+         
       }
       .playfair-font{
         font-family: 'Playfair Display', serif;
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header w-100>
+    <header>
         <!-- logo display -->
         <img src="images/logo.png" alt="logo" class="position-absolute position-absolute top-0 start-0 m-2">
         <!-- navigation bar -->
@@ -40,22 +40,22 @@
           <li class="nav-item">
               <a class="nav-link" href="index.html">HOME</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="work.html">WORK</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">WORK</a>
+            </li>
             <!-- search section -->
             <li>
               <div class="search-container">
                 <button class="btn btn-primary search-btn" onclick="toggleSearchForm()">Open Search</button>
               </div>
             </li>
-        </ul>
+          </ul>
         <div class="bg vh-100 overflow-hidden">
           <video autoplay muted loop plays-inline>
             <source src="images/header-video.mp4" type="video/mp4">
@@ -91,11 +91,33 @@
             </div>
           <div class="gallery-content-section container-fluid">
             <div class="gallery-section-1 row row-gap-5 justify-content-center">
-              <div class="column1 col-3">
+              <div class="column1 col-3 container-fluid">
+                <picture>
+                  <source srcset="images/gallery-1-derivatives/gallery-1-320_x_452.png" media="(max-width: 320px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-480_x_678.png" media="(max-width: 480px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-640_x_904.png" media="(max-width: 480px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-720_x_1017.png" media="(max-width: 720px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-960_x_1356.png" media="(max-width: 960px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-1920_x_2713.png" media="(max-width: 1920px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-2160_x_3052.png" media="(max-width: 2160px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-2880_x_4070.png" media="(max-width:2880px)" type="image/svg+xml">
+                  <img src="images/gallery-1.png" class="img-fluid img-thumbnail" alt="Modern-mettalics">
+                </picture>
                 <img src="images/gallery-1.png" alt="Modern-mettalics" class="img-fluid">
                 <p class="align-self-end fs-5">Take a journey through the displays of my work, each piece a testament to my creativity and passion. Feel free to explore and experience the essence of my artistic expression.</p>
               </div>
               <div class="col-6">
+                <picture>
+                  <source srcset="images/gallery-1-derivatives/gallery-1-320_x_452.png" media="(max-width: 320px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-480_x_678.png" media="(max-width: 480px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-640_x_904.png" media="(max-width: 480px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-720_x_1017.png" media="(max-width: 720px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-960_x_1356.png" media="(max-width: 960px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-1920_x_2713.png" media="(max-width: 1920px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-2160_x_3052.png" media="(max-width: 2160px)" type="image/svg+xml">
+                  <source srcset="images/gallery-1-derivatives/gallery-1-2880_x_4070.png" media="(max-width:2880px)" type="image/svg+xml">
+                  <img src="images/gallery-1.png" class="img-fluid img-thumbnail" alt="Modern-mettalics">
+                </picture>
                 <img src="images/gallery-2.jpg" alt="chrome-hand-1" class="img-fluid">
               </div>
               <div class=" column3 col-3 text-right justify-content-center fs-5">
@@ -129,10 +151,11 @@
                   <h1 class="text-center display-4 mt-4">READY TO ROLL?</h1>
                   <h2 class="text-end mx-5 mt-4">Check my portfolio.</h2>
                 </div>
-                <span class="between-border border border-bottom border-2 border-black px-5 mt-5"></span>
                 <div class="content-second mb-5">
-                  <h1 class="align-self-start">There is always the latent power of talent waiting to be discovered and harnessed for improvement.</h1>
-                  <button>EXPLORE MORE</button>
+                  <h1 class="align-self-start text-center">There is always the latent power of <br> talent waiting to be discovered and <br>harnessed for improvement.</h1>
+                  <div class="explore-more-button d-flex justify-content-center mt-5">
+                    <button class="bg-white mt-5 px-5 pt-4 pb-4  border border-4 border-black rounded-4 bold">EXPLORE MORE</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -150,57 +173,43 @@
       </section>
     </main>
     <footer class="container-fluid grey-section">
-      <!-- <div class="footer-row row">
-        <div class="lifestyle col-6">
-          
+      <div class="footer-row row">
+        <div class="footer-heading col-8">
+          <h1 class="display-1">Desinging is a <br><span class="lifestyle-word">lifestyle.</span></h1>
         </div>
-        
-      </div> -->
-    <!-- <div class="bottom-footer container">
+        <div class="footer-nav mt-4 col-4 justify-content-end align-items-end">
+          <ul class="nav d-flex row">
+            <li class="nav-item">
+              <a class="nav-link active p-0 text-start" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0 text-start" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0 text-start" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0 text-start" href="work.html">WORK</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-footer container-fluid">
       <div class="footer-bottom-row row">
-        
+        <div class="copyright col-6 align-self-end text-start">
+          <h2 class="text-start">© Dhruvi Patel, 2023</h2>
+        </div>
         <div class="social-profiles col-6">
-          
-        </div>
-      </div>
-    </div> -->
-    <div class="footer-content">
-      <div class="div-1">
-        <div>
-          <h1 class="display-1">Desinging is a lifestyle.</h1>
-        </div>
-        <div>
-          <ul class="nav row">
-            <li class="nav-item">
-              <a class="nav-link active p-0" aria-current="page" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="about.html">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="contact.html">CONTACT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="work.html">WORK</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="div-2">
-        <div class="div-3"><div class="copyright col-6 align-self-end">
-          <h2>© Dhruvi Patel, 2023</h2>
-        </div></div>
-        <div class="div-4"><div class="social-heading"><h1>Checkout My Social Profiles</h1>
+          <div class="social-heading"><h1 class="text-end">Checkout My Social Profiles</h1></div>
           <div class="social-icons d-flex justify-content-end">
-            <div class="instagram"><img src="images/instagram.png" alt="instagram" class="w-1"></div>
-            <div class="linkedin"><img src="images/linked-in.png" alt="linked-in"></div>
-            <div class="facebook"><img src="images/facebook.png" alt="facebook"></div>
+            <div class="instagram px-3"><img src="images/instagram.png" alt="instagram" class="w-1"></div>
+            <div class="linkedin px-2"><img src="images/linked-in.png" alt="linked-in"></div>
+            <div class="facebook px-3"><img src="images/twitter.png" alt="facebook"></div>
           </div>
         </div>
       </div>
     </div>
-      
-    </footer>
+  </footer>
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

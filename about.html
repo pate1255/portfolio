@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dhruvi Patel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <style>
       .black-section {
         background-color: black;
@@ -21,6 +22,9 @@
         color: white; /* Set text color to white for better visibility */
         padding: 20px; /* Add padding for spacing inside the section */   
       }
+      .custom-spacer {
+        padding-right: 42rem; /* You can adjust the size as needed */
+      }
   </style>
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -30,7 +34,7 @@
         <img src="images/logo-white.png" alt="logo" class="position-absolute position-absolute top-0 start-0 m-2">
         <!-- navigation bar -->
         <ul class="nav justify-content-end position-absolute top-0 end-0 px-2 pt-2">
-          <li class="nav-item">
+          <li class="nav-item-about">
               <a class="nav-link" href="index.html">HOME</a>
           </li>
             <li class="nav-item">
@@ -60,49 +64,50 @@
       <h1 class="display-1">LET'S LEAD.</h1>
       <h2>Crafting my legacy</h2>
     </div>
-    <div class="content-1 d-flex flex-column mt-5">
-      <span class="border border-3 border-top border-primary ms-auto px-5"></span>
-      <div class="p-2 ms-auto m-3"> <img src="images/about image.jpg" alt=""></div>
+    <div class="content-1 d-flex flex-column mt-5  container-fluid">
+      <span class="content-1-border border border-3 border-top border-primary ms-auto ps-5 custom-spacer"></span>
+      <!-- <div class="border-line-content-1 ms-auto"><span class="border border-3 border-dark"></span></div> -->
+      <div class="content-1-image ms-auto me-2 mt-4"> <img src="images/about image.jpg" alt=""></div>
       <div class="p-2 m-3"><p class="text-center">Meet Dhruvi Patel, the proud owner of this website and a current student pursuing Interactive Media Design. Her journey into the design industry has been nothing short of dynamic. Embarking on this path at the age of 17, she is a self-learner who transformed her passion into a thriving career. Dhruvi is dedicated to constantly elevating her design standards and refining her working style, not only for her own growth but also to empower others in their endeavors. Her determination fuels her to tackle each new challenge with unwavering commitment, ensuring progress and success in her creative endeavors.</p></div>
     </div>
     <div class="content-2 d-flex flex-column mt-5">
-      <span class="border border-top border-3 border-primary"></span>
+      <span class="content-1-border border border-3 border-top border-primary me-auto ps-5 custom-spacer"></span>
       <div class="p-2 m-3"> <img src="images/ux-template.jpg" alt=""></div>
       <div class="p-2 m-3"><p class="text-center">With a discerning eye for design analysis and a commitment to fundamental principles such as color harmony, Dhruvi excels in prioritizing basic design standards. Boasting over 4 years of expertise in Adobe Illustrator and Photoshop, she has recently delved into the world of UI design. Dhruvi firmly believes that her design style has the power to transform websites into visually captivating templates. Grounded in professionalism, she places great importance on creating concept-based designs. Her approach involves thorough research and drawing from her wealth of experience before delving into the development process.</p></div>
     </div>
-  <footer class="container-fluid grey-section">
+    <footer class="container-fluid grey-section">
       <div class="footer-row row">
-        <div class="lifestyle col-6">
-          <h1 class="display-1">Desinging is a lifestyle.</h1>
+        <div class="footer-heading col-8">
+          <h1 class="display-1">Desinging is a <br><span class="lifestyle-word">lifestyle.</span></h1>
         </div>
-        <div class="footer-nav col-6 justify-content-end align-items-end">
-          <ul class="nav d-flex row">
-            <li class="nav-item">
-              <a class="nav-link active p-0" aria-current="page" href="index.html">HOME</a>
+        <div class="footer-nav mt-4 col-4 justify-content-end align-items-end">
+            <ul class="nav d-flex row">
+              <li class="nav-item">
+                <a class="nav-link active p-0 text-start" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-start" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-start" href="contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-start" href="work.html">WORK</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="about.html">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="contact.html">CONTACT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="work.html">WORK</a>
-          </li>
-        </ul>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="bottom-footer container">
+    <div class="bottom-footer container-fluid">
       <div class="footer-bottom-row row">
-        <div class="copyright col-6 align-self-end">
-          <h2>© Dhruvi Patel, 2023</h2>
+        <div class="copyright col-6 align-self-end text-start">
+          <h2 class="text-start">© Dhruvi Patel, 2023</h2>
         </div>
         <div class="social-profiles col-6">
-          <div class="social-heading"><h1>Checkout My Social Profiles</h1></div>
+          <div class="social-heading"><h1 class="text-end">Checkout My Social Profiles</h1></div>
           <div class="social-icons d-flex justify-content-end">
-            <div class="instagram"><img src="images/instagram.png" alt="instagram" class="w-1"></div>
-            <div class="linkedin"><img src="images/linked-in.png" alt="linked-in"></div>
-            <div class="facebook"><img src="images/facebook.png" alt="facebook"></div>
+            <div class="instagram px-3"><img src="images/instagram.png" alt="instagram" class="w-1"></div>
+            <div class="linkedin px-2"><img src="images/linked-in.png" alt="linked-in"></div>
+            <div class="facebook px-3"><img src="images/twitter.png" alt="facebook"></div>
           </div>
         </div>
       </div>

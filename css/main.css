@@ -132,6 +132,29 @@
     margin-left: 30rem;
 }
 
+.content-second h1{
+    font-family: var(--custom2-font-2);
+    font-size: 2rem;
+}
+
+.content-second{
+    margin-top: 4rem;
+    border-top: 2px solid black;
+    padding-top: 4rem;
+}
+
+.explore-more-button{
+    font-weight: 800;
+    font-family: var(--custom2-font-2);
+}
+
+.explore-more-button button{
+    font-weight: 800;
+}
+
+
+
+
 /* -------About--------------------------- */
 
 .header-content h1{
@@ -162,6 +185,14 @@
     font-weight: 600;
 }
 
+/* .content-1-image{
+    border-top: 2px solid black;
+    padding-top: 3rem;
+    
+} */
+
+
+
 /* ----------Contact------------------- */
 
 .bg-join-party h1{
@@ -170,4 +201,142 @@
     font-weight: 800;
     font-size: 7rem;
     text-align: center;
+}
+
+.form-group label{
+    font-family: var(--custom2-font-2);
+    font-weight: 700;
+}
+
+.form-group input{
+    border-radius: 0px;
+    border: 2px solid black;
+}
+
+.form-group textarea{
+    border-radius: 0px;
+    border: 2px solid black;
+}
+
+.form-group button{
+    border: 2px solid black;
+    border-radius: 1.2rem;
+    font-family: var(--custom2-font-2);
+    font-weight: 800; 
+    padding: 1rem 2.5rem 1rem 2.5rem;
+}
+
+.lets-connect-text h1{
+    font-family: var(--custom1-font-1);
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+
+/* ---------work-----------*/
+
+.header-content-work h1{
+    font-family: var(--custom2-font-2);
+    font-weight: 800;
+    font-size: 7rem;
+}
+
+.dive-in-section h1{
+    font-family: var(--custom1-font-1);
+    font-size: 9rem;
+    font-weight: 800;
+}
+
+.dive-in-section h2{
+    font-family: var(--custom1-font-1);
+    font-style: italic;
+}
+
+.fallacy-heading h2{
+    font-family: var(--custom1-font-1);
+    font-size: 4rem;
+    
+}
+
+.justplay-heading h2{
+    font-family: var(--custom1-font-1);
+    font-size: 4rem;
+}
+
+.love-it-heading h1{
+    font-family: var(--custom1-font-1);
+    font-size: 10rem;
+    font-weight: 600;
+    color: black;
+}
+
+.happy-to-hear h2{
+    font-family: var(--custom1-font-1);
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.lets-connect-button{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1.2rem;
+    font-family: var(--custom2-font-2);
+    font-weight: 800; 
+    padding: 1rem 2.5rem 1rem 2.5rem;
+}
+
+/* ------footer------- */
+.footer-heading h1{
+    font-family: var(--custom1-font-1);
+}
+
+.lifestyle-word{
+    font-style: italic;
+}
+
+.copyright h2{
+    font-family: var(--custom2-font-2);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-right: 2rem;
+}
+
+.nav-item a{
+    font-family: var(--custom2-font-2);
+    font-size: 1.4rem;
+    color: white;
+}
+
+.footer-nav{
+   padding-left: 17rem;
+}
+
+.social-heading h1{
+    font-family: var(--custom2-font-2);
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.social-icons img{
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ----------demo------------ */
+
+.demo-navbar a{
+    font-family: var(--custom1-font-1);
+    color: black;
+    font-weight: 700;
+}
+
+.button-style{
+    text-decoration: none;
+    border: none;
+}
+
+/* ------------------media queries mobile----------------------- */
+
+@media screen and (min-widht: 320px){
+    
 }

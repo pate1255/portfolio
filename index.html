@@ -34,7 +34,9 @@
   <body>
     <header>
         <!-- logo display -->
-        <img src="images/logo.png" alt="logo" class="position-absolute position-absolute top-0 start-0 m-2">
+        <div class="brand-logo">
+          <img src="images/logo.png" alt="logo" class="position-absolute position-absolute top-0 start-0 m-2">
+        </div>
         <!-- navigation bar -->
         <ul class="nav justify-content-end position-absolute top-0 end-0 px-2 pt-2">
           <li class="nav-item">
@@ -56,7 +58,7 @@
               </div>
             </li>
           </ul>
-        <div class="bg vh-100 overflow-hidden">
+        <div class="video-bg vh-100 overflow-hidden" id="header-video">
           <video autoplay muted loop plays-inline>
             <source src="images/header-video.mp4" type="video/mp4">
           </video>
@@ -65,9 +67,6 @@
       <div class="header-content container-fluid">
         <div class="header-h position-absolute bottom-0 start-0 text-light container-fluid">
           <div class="header-h-1 mx-4"><h1 class="display-1">READY TO <br> <span class="playfair">Explore?</span></h1></div>
-        </div>
-        <div class="header-p position-absolute bottom-0 end-0 col-3 text-light container-fluid">
-          <p>Commence on a journey through my design world, where we can delve into its intricacies and work together to enhance and elevate every aspect.</p>
         </div>
       </div>    
         
@@ -89,61 +88,97 @@
             <div class="gallery-heading container-fluid">
               <h1 class="text-start">GALLERY</h1>
             </div>
-          <div class="gallery-content-section container-fluid">
+          <div class="gallery-content-section container-lg">
             <div class="gallery-section-1 row row-gap-5 justify-content-center">
               <div class="column1 col-3 container-fluid">
-                <picture>
-                  <source srcset="images/gallery-1-derivatives/gallery-1-320_x_452.png" media="(max-width: 320px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-480_x_678.png" media="(max-width: 480px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-640_x_904.png" media="(max-width: 480px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-720_x_1017.png" media="(max-width: 720px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-960_x_1356.png" media="(max-width: 960px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-1920_x_2713.png" media="(max-width: 1920px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-2160_x_3052.png" media="(max-width: 2160px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-2880_x_4070.png" media="(max-width:2880px)" type="image/svg+xml">
-                  <img src="images/gallery-1.png" class="img-fluid img-thumbnail" alt="Modern-mettalics">
-                </picture>
-                <img src="images/gallery-1.png" alt="Modern-mettalics" class="img-fluid">
-                <p class="align-self-end fs-5">Take a journey through the displays of my work, each piece a testament to my creativity and passion. Feel free to explore and experience the essence of my artistic expression.</p>
+                <div class="column1-image">
+                  <picture>
+                    <source srcset="images/gallery-1-derivatives/gallery-1-320_x_452.png" media="(max-width: 320px)" type="image/svg+xml">
+                    <source srcset="images/gallery-1-derivatives/gallery-1-480_x_678.png" media="(max-width: 480px)" type="image/svg+xml">
+                    <source srcset="images/gallery-1-derivatives/gallery-1-640_x_904.png" media="(max-width: 640px)" type="image/svg+xml">
+                    <source srcset="images/gallery-1-derivatives/gallery-1-720_x_1017.png" media="(max-width: 720px)" type="image/svg+xml">
+                    <source srcset="images/gallery-1-derivatives/gallery-1-960_x_1356.png" media="(max-width: 960px)" type="image/svg+xml">
+                    <source srcset="images/gallery-1-derivatives/gallery-1-1920_x_2713.png" media="(max-width: 1920px)" type="image/svg+xml">
+                    <source srcset="images/gallery-1-derivatives/gallery-1-2160_x_3052.png" media="(max-width: 2160px)" type="image/svg+xml">
+                    <source srcset="images/gallery-1-derivatives/gallery-1-2880_x_4070.png" media="(max-width:2880px)" type="image/svg+xml">
+                    <img src="images/gallery-1.png" class="img-fluid img-thumbnail" alt="Modern-mettalics">
+                  </picture>
+                </div>
+                <div class="column1-para">
+                  <p class="paragraph-column1 align-self-end">Take a journey through the displays of my work, each piece a testament to my creativity and passion. Feel free to explore and experience the essence of my artistic expression.</p>
+                </div>
               </div>
-              <div class="col-6">
+              <div class="column2 col-6">
                 <picture>
-                  <source srcset="images/gallery-1-derivatives/gallery-1-320_x_452.png" media="(max-width: 320px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-480_x_678.png" media="(max-width: 480px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-640_x_904.png" media="(max-width: 480px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-720_x_1017.png" media="(max-width: 720px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-960_x_1356.png" media="(max-width: 960px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-1920_x_2713.png" media="(max-width: 1920px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-2160_x_3052.png" media="(max-width: 2160px)" type="image/svg+xml">
-                  <source srcset="images/gallery-1-derivatives/gallery-1-2880_x_4070.png" media="(max-width:2880px)" type="image/svg+xml">
-                  <img src="images/gallery-1.png" class="img-fluid img-thumbnail" alt="Modern-mettalics">
+                  <source srcset="images/gallery-2-derivatives/gallery-2-320_x_426.jpg" media="(max-width: 320px)" type="image/svg+xml">
+                  <source srcset="images/gallery-2-derivatives/gallery-2-480_x_639.jpg" media="(max-width: 480px)" type="image/svg+xml">
+                  <source srcset="images/gallery-2-derivatives/gallery-2-640_x_853.jpg" media="(max-width: 640px)" type="image/svg+xml">
+                  <source srcset="images/gallery-2-derivatives/gallery-2-720_x_960.jpg" media="(max-width: 720px)" type="image/svg+xml">
+                  <source srcset="images/gallery-2-derivatives/gallery-2-960_x_1279.jpg" media="(max-width: 960px)" type="image/svg+xml">
+                  <source srcset="images/gallery-2-derivatives/gallery-2-1920_x_2560.jpg" media="(max-width: 1920px)" type="image/svg+xml">
+                  <source srcset="images/gallery-2-derivatives/gallery-2-2160_x_2880.jpg" media="(max-width: 2160px)" type="image/svg+xml">
+                  <source srcset="images/gallery-2-derivatives/gallery-2-2880_x_3840.jpg" media="(max-width:2880px)" type="image/svg+xml">
+                  <img src="images/gallery-2.jpg" class="img-fluid img-thumbnail" alt="chrome-hand-1">
                 </picture>
-                <img src="images/gallery-2.jpg" alt="chrome-hand-1" class="img-fluid">
               </div>
               <div class=" column3 col-3 text-right justify-content-center fs-5">
-                <p class="pb-5">Step into my creative realm, where you can immerse yourself in my unique design style and portfolio.</p>
-                <img src="images/gallery-3.jpg" alt="chrome-hand-2" class="img-fluid align-self-end">
+                <div class="column3-para">
+                  <p class="pb-5">Step into my creative realm, where you can immerse yourself in my unique design style and portfolio.</p>
+                </div>
+                <div class="column3-image">
+                  <picture>
+                    <source srcset="images/gallery-3-derivatives/gallery-3-320_x_400.jpg" media="(max-width: 320px)" type="image/svg+xml">
+                    <source srcset="images/gallery-3-derivatives/gallery-3-480_x_600.jpg" media="(max-width: 480px)" type="image/svg+xml">
+                    <source srcset="images/gallery-3-derivatives/gallery-3-640_x_800.jpg" media="(max-width: 640px)" type="image/svg+xml">
+                    <source srcset="images/gallery-3-derivatives/gallery-3-720_x_900.jpg" media="(max-width: 720px)" type="image/svg+xml">
+                    <source srcset="images/gallery-3-derivatives/gallery-3-960_x_1200.jpg" media="(max-width: 960px)" type="image/svg+xml">
+                    <source srcset="images/gallery-3-derivatives/gallery-3-1920_x_2400.jpg" media="(max-width: 1920px)" type="image/svg+xml">
+                    <source srcset="images/gallery-3-derivatives/gallery-3-2160_x_2700.jpg" media="(max-width: 2160px)" type="image/svg+xml">
+                    <source srcset="images/gallery-3-derivatives/gallery-3-2880_x_3600.jpg" media="(max-width:2880px)" type="image/svg+xml">
+                    <img src="images/gallery-3.jpg" class="img-fluid img-thumbnail  align-self-end" alt="chrome-hand-2">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <!-- portfolio section -->
-        <div class="portfolio-section">
+        <div class="portfolio-section container-fluid">
           <div class="portfolio-container container-sm"></div>
-          <div class="vision row no-gutters g-0">
+          <div class="vision row no-gutters g-0 container-fluid">
             <div class="vision-content col-8 bg-black">
               <h1 class="text-light mt-4 display-1 mx-3">VISION</h1>
               <p class="text-light mt-5 p">My vision is to positively impact people's lives through my passion. I consistently refine my art, staying abreast of modern design standards while remaining true to my artistic roots. Each day, I strive to sculpt my design style, aiming to offer a diverse range of artistic expressions to like-minded individuals who share my passion.</p>
             </div>
             <div class="vision-image col-4 img-fluid">
-              <img src="images/visionball.jpg" alt="vision">
+              <picture>
+                <source srcset="images/visionball-derivatives/visionball-320_x_320.jpg" media="(max-width: 320px)" type="image/svg+xml">
+                <source srcset="images/visionball-derivatives/visionball-480_x_480.jpg" media="(max-width: 480px)" type="image/svg+xml">
+                <source srcset="images/visionball-derivatives/visionball-640_x_640.jpg" media="(max-width: 640px)" type="image/svg+xml">
+                <source srcset="images/visionball-derivatives/visionball-720_x_720.jpg" media="(max-width: 720px)" type="image/svg+xml">
+                <source srcset="images/visionball-derivatives/visionball-960_x_960.jpg" media="(max-width: 960px)" type="image/svg+xml">
+                <source srcset="images/visionball-derivatives/visionball-1920_x_1920.jpg" media="(max-width: 1920px)" type="image/svg+xml">
+                <source srcset="images/visionball-derivatives/visionball-2160_x_2160.jpg" media="(max-width: 2160px)" type="image/svg+xml">
+                <source srcset="images/visionball-derivatives/visionball-2880_x_2880.jpg" media="(max-width:2880px)" type="image/svg+xml">
+                <img src="images/visionball.jpg" class="img-fluid align-self-end" alt="vision">
+              </picture>
             </div>
           </div>
-          <div class="explore row no-gutters g-0">
+          <div class="explore-and-portfolio explore row no-gutters g-0">
             <div class="explore-image col-md-6">
-              <img src="images/portfolio.jpg" alt="portfolio">
+              <picture>
+                <source srcset="images/portfolio-derivatives/portfolio-320_x_480.jpg" media="(max-width: 320px)" type="image/svg+xml">
+                <source srcset="images/portfolio-derivatives/portfolio-480_x_720.jpg" media="(max-width: 480px)" type="image/svg+xml">
+                <source srcset="images/portfolio-derivatives/portfolio-640_x_960.jpg" media="(max-width: 640px)" type="image/svg+xml">
+                <source srcset="images/portfolio-derivatives/portfolio-720_x_1080.jpg" media="(max-width: 720px)" type="image/svg+xml">
+                <source srcset="images/portfolio-derivatives/portfolio-960_x_1440.jpg" media="(max-width: 960px)" type="image/svg+xml">
+                <source srcset="images/portfolio-derivatives/portfolio-1920_x_2880.jpg" media="(max-width: 1920px)" type="image/svg+xml">
+                <source srcset="images/portfolio-derivatives/portfolio-2160_x_3240.jpg" media="(max-width: 2160px)" type="image/svg+xml">
+                <source srcset="images/portfolio-derivatives/portfolio-2880_x_4320.jpg" media="(max-width:2880px)" type="image/svg+xml">
+                <img src="images/portfolio.jpg" class="img-fluid" alt="portfolio">
+              </picture>
             </div>
-            <div class="explore-roll-content col-md-6">
+              <div class="explore-roll-content col-md-6">
                <div class="explore-container container">
               </div> 
               <div class="explore-row row align-items-start g-0">
@@ -161,7 +196,7 @@
             </div>
           </div>
           <!-- contact page link section -->
-          <div class="journey text-center p-5 purple-section">
+          <div class="journey text-center pt-5 purple-section">
             <div class="h1-line-1">
               <h1>ARE YOU READY TO EMBARK ON <br>AN EXCITING JOURNEY?</h1>
             </div>

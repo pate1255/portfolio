@@ -25,24 +25,26 @@
         padding-right: 58rem; /* You can adjust the size as needed */
       }
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header>
+    <header class="w-100 main-header">
         <!-- logo display -->
         <img src="images/logo.png" alt="logo" class="position-absolute position-absolute top-0 start-0 m-2">
         <!-- navigation bar -->
         <ul class="nav justify-content-end position-absolute top-0 end-0 px-2 pt-2">
-          <li class="nav-item-work">
+            <li class="nav-item-work">
               <a class="nav-link" href="index.html">HOME</a>
-          </li>
-            <li class="nav-item">
+            </li>
+            <li class="nav-item-work">
               <a class="nav-link" href="about.html">ABOUT</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item-work">
               <a class="nav-link" href="contact.html">CONTACT</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item-work">
               <a class="nav-link" href="work.html">WORK</a>
             </li>
             <!-- search section -->
@@ -51,18 +53,18 @@
                 <button class="btn btn-primary search-btn" onclick="toggleSearchForm()">Open Search</button>
               </div>
             </li>
-        </ul>
+          </ul>
         <div class="bg vh-100 overflow-hidden">
             <img src="images/white-bg.png" alt="">
         </div>
-        <div class="header-content-work">
-        <ul class="position-absolute bottom-0 end-0">
+        <div class="header-content-work" >
+        <div class="position-absolute bottom-0 end-0 animate__animated animate__fadeInRight">
             <h1 class="text-dark">GALLERY SPACE</h1>
         </div>
     </header>
     <main >
         <section class="black-section">
-              <div class="dive-in-section container-fluid black-section">
+              <div class="dive-in-section container-fluid black-section" data-aos="fade-left">
                 <!-- Your content goes here -->
                 <h1 class="text-end">DIVE IN !</h1>
                 <h2 class="text-end pt-4">A Visual Symphony <br> of Accomplishments</h2>
@@ -72,7 +74,7 @@
                 <div class="container mt-4">
                 <div class="row">
                   <!-- Image on the left -->
-                    <div class="col-md-6 image-container">
+                    <div class="col-md-6 image-container" data-aos="fade-up-right">
                       <picture>
                         <source srcset="images/fallacy-derivatives/fallacy-320_x_320.png" media="(max-width: 320px)" type="image/svg+xml">
                         <source srcset="images/fallacy-derivatives/fallacy-480_x_480.png" media="(max-width: 480px)" type="image/svg+xml">
@@ -88,12 +90,12 @@
                     </div>
                     
                     <!-- Heading on the right -->
-                    <div class="fallacy-heading col-md-6 text-start align-self-start">
+                    <div class="fallacy-heading col-md-6 text-start align-self-start"  data-aos="fade-left">
                         <h2 class="text-start">1. FALLACY</h2>
                     </div>
                 </div>
               </div>
-            <div class="p-2 m-3">
+            <div class="p-2 m-3" data-aos="zoom-in-up">
               <p class="text-center">The artwork I made is a fusion of Adobe Photoshop and Illustrator techniques, with street-style fashion as the main source of inspiration. I conducted extensive research on modern streetwear designs to create this illustration, which incorporates a mix of streetwear, graphics, retro, and y2k elements. My aim was to create a visually compelling piece that tells a story and has a clear structure, and I believe I succeeded in doing so. 
               I meticulously crafted the fonts using the pen tool and built the entire illustration from scratch. The car featured in the artwork adds depth and interest to the plot, and I thoroughly enjoyed the challenge of creating something truly unique and fun. Overall, this piece is a testament to my passion for illustration and my dedication to pushing myself creatively.</p>
             </div>
@@ -109,7 +111,7 @@
                     </div>
                     
                     <!-- Heading on the right -->
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="zoom-in-left">
                       <picture>
                         <source srcset="images/justplay-derivatives/justplay-320_x_225.png" media="(max-width: 320px)" type="image/svg+xml">
                         <source srcset="images/justplay-derivatives/justplay-480_x_338.png" media="(max-width: 480px)" type="image/svg+xml">
@@ -124,16 +126,16 @@
                     </div>
                 </div>
             </div>
-            <div class="p-2 m-3"><p class="text-center">At the age of 17, I created a stunning piece of art using Adobe Photoshop. The design I came up with was a unique blend of the futuristic chrome style and the classic y2k concept. I spent countless hours pushing my boundaries, experimenting with different effects, and striving for the most realistic outcome possible. I was determined to make sure the design didn't appear overdone, while still incorporating all the realistic effects I had applied. To create the piece, I started with a simple gradient effect and then sharpened the edges to add some shine. This turned out to be a real game changer, bringing the artwork to life. To complete the design, I used a stock font that perfectly complemented the overall look and feel of the piece. Looking back on this artwork, I feel a sense of nostalgia as it was my first real breakthrough using Adobe Photoshop and it gave me the confidence to continue creating beautiful designs.</p></div>
+            <div class="p-2 m-3" data-aos="zoom-in-up"><p class="text-center">At the age of 17, I created a stunning piece of art using Adobe Photoshop. The design I came up with was a unique blend of the futuristic chrome style and the classic y2k concept. I spent countless hours pushing my boundaries, experimenting with different effects, and striving for the most realistic outcome possible. I was determined to make sure the design didn't appear overdone, while still incorporating all the realistic effects I had applied. To create the piece, I started with a simple gradient effect and then sharpened the edges to add some shine. This turned out to be a real game changer, bringing the artwork to life. To complete the design, I used a stock font that perfectly complemented the overall look and feel of the piece. Looking back on this artwork, I feel a sense of nostalgia as it was my first real breakthrough using Adobe Photoshop and it gave me the confidence to continue creating beautiful designs.</p></div>
             
         </div>
     </section>
         <div class="love-it purple-section">
-            <div class="love-it-heading"><h1 class="text-center">LOVE IT?</h1></div>
-            <div class="happy-to-hear mb-5"><h2 class="text-center">Would be <br> happy to hear from you!</h2></div>
+            <div class="love-it-heading" data-aos="zoom-in-down" data-aos-duration="1000"><h1 class="text-center">LOVE IT?</h1></div>
+            <div class="happy-to-hear mb-5" data-aos="zoom-in-up" data-aos-duration="1000"><h2 class="text-center">Would be <br> happy to hear from you!</h2></div>
             <div class="row">
-                <div class="col-md-12 text-center">
-                  <button class="lets-connect-button btn">LET'S CONNECT</button>
+                <div class="journey-button text-center">
+                  <button class="lets-connect-button mt-5 px-5 pt-4 pb-4"><a href="about.html">LET'S CONNECT</a></button>
                 </div>
             </div>
         </div>
@@ -161,7 +163,7 @@
           </ul>
         </div>
       </div>
-      <div class="bottom-footer container-fluid">
+      <div class="bottom-footer container-fluid" >
         <div class="footer-bottom-row row">
           <div class="copyright col-6 align-self-end text-start">
             <h2 class="text-start">© Dhruvi Patel, 2023</h2>
@@ -180,5 +182,9 @@
     </footer>
     <!--Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

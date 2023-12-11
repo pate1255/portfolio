@@ -26,6 +26,8 @@
         padding: 20px; /* Add padding for spacing inside the section */   
       }
       </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -37,13 +39,13 @@
           <li class="nav-item-contact">
               <a class="nav-link" href="index.html">HOME</a>
           </li>
-            <li class="nav-item">
+            <li class="nav-item-contact">
               <a class="nav-link" href="about.html">ABOUT</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item-contact">
               <a class="nav-link" href="contact.html">CONTACT</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item-contact">
               <a class="nav-link" href="work.html">WORK</a>
             </li>
             <!-- search section -->
@@ -55,12 +57,12 @@
         </ul>
         <div class="bg-join-party vh-100 overflow-hidden">
           <img src="images/purple-bg.png" alt="">
-          <h1 class="position-absolute bottom-0 start-0">JOIN THE PARTY!</h1>
+          <h1 class="position-absolute bottom-0 start-0 animate__animated animate__zoomInDown">JOIN THE PARTY!</h1>
         </div>
     </header>
     <main>
         <section>
-            <div class="lets-lead pt-5 mt-5 mx-5">
+            <div class="lets-lead pt-5 mt-5 mx-5" data-aos="zoom-in-right" data-aos-duration="1000">
                 <h1 class="display-1">IT'S NEVER<br>TO LATE</h1>
                 <h2>Dial the Drama! Reach out <br> and make my day!</h2>
             </div>
@@ -84,12 +86,12 @@
                         <label for="message">MESSAGE</label>
                         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                       </div>
-                      <div class="form-group text-center mt-3"><button type="submit" class="btn text-center">SUBMIT</button></div>
+                      <div class="form-group-button text-center mt-3"><button type="submit" class="text-center">SUBMIT</button></div>
                     </form>
                   </div>
                 </div>
             </div>
-            <div class="lets-connect-text">
+            <div class="lets-connect-text"  data-aos="zoom-in-down">
                 <h1>LET'S <br> CONNECT</h1>
             </div>
         </section>
@@ -134,5 +136,9 @@
       
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

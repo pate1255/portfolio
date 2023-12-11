@@ -29,10 +29,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,500;1,600&family=Raleway:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header>
+    <header class="w-100 main-header">
         <!-- logo display -->
         <div class="brand-logo">
           <img src="images/logo.png" alt="logo" class="position-absolute position-absolute top-0 start-0 m-2">
@@ -76,22 +81,22 @@
         <section>
           <!-- creating quote section -->
           <div class="quote-section black-section text-light container-fluid">
-            <div class="quote mt-4 pt-3 container-fluid">
+            <div class="quote mt-4 pt-3 container-fluid" data-aos="fade-up-right">
               <h1 class="display-5">Every great design <br>begins with <br> an even <span class="playfair black-section">better story.</span></h1></div></h1>
             </div>
-            <div class="citation black-section">
+            <div class="citation black-section" data-aos="fade-up-left">
               <div class="author text-end m-4 p-4"><h2>~Lorinda Memo</h2></div>
             </div>
           </div>
           <!-- gallery section -->
           <div class="gallery">
-            <div class="gallery-heading container-fluid">
+            <div class="gallery-heading container-fluid" data-aos="fade-left">
               <h1 class="text-start">GALLERY</h1>
             </div>
           <div class="gallery-content-section container-lg">
             <div class="gallery-section-1 row row-gap-5 justify-content-center">
               <div class="column1 col-3 container-fluid">
-                <div class="column1-image">
+                <div class="column1-image" data-aos="fade-up">
                   <picture>
                     <source srcset="images/gallery-1-derivatives/gallery-1-320_x_452.png" media="(max-width: 320px)" type="image/svg+xml">
                     <source srcset="images/gallery-1-derivatives/gallery-1-480_x_678.png" media="(max-width: 480px)" type="image/svg+xml">
@@ -104,11 +109,11 @@
                     <img src="images/gallery-1.png" class="img-fluid img-thumbnail" alt="Modern-mettalics">
                   </picture>
                 </div>
-                <div class="column1-para">
+                <div class="column1-para" data-aos="fade-up">
                   <p class="paragraph-column1 align-self-end">Take a journey through the displays of my work, each piece a testament to my creativity and passion. Feel free to explore and experience the essence of my artistic expression.</p>
                 </div>
               </div>
-              <div class="column2 col-6">
+              <div class="column2 col-6" data-aos="fade-up">
                 <picture>
                   <source srcset="images/gallery-2-derivatives/gallery-2-320_x_426.jpg" media="(max-width: 320px)" type="image/svg+xml">
                   <source srcset="images/gallery-2-derivatives/gallery-2-480_x_639.jpg" media="(max-width: 480px)" type="image/svg+xml">
@@ -122,10 +127,10 @@
                 </picture>
               </div>
               <div class=" column3 col-3 text-right justify-content-center fs-5">
-                <div class="column3-para">
+                <div class="column3-para" data-aos="fade-up">
                   <p class="pb-5">Step into my creative realm, where you can immerse yourself in my unique design style and portfolio.</p>
                 </div>
-                <div class="column3-image">
+                <div class="column3-image" data-aos="fade-up">
                   <picture>
                     <source srcset="images/gallery-3-derivatives/gallery-3-320_x_400.jpg" media="(max-width: 320px)" type="image/svg+xml">
                     <source srcset="images/gallery-3-derivatives/gallery-3-480_x_600.jpg" media="(max-width: 480px)" type="image/svg+xml">
@@ -135,7 +140,7 @@
                     <source srcset="images/gallery-3-derivatives/gallery-3-1920_x_2400.jpg" media="(max-width: 1920px)" type="image/svg+xml">
                     <source srcset="images/gallery-3-derivatives/gallery-3-2160_x_2700.jpg" media="(max-width: 2160px)" type="image/svg+xml">
                     <source srcset="images/gallery-3-derivatives/gallery-3-2880_x_3600.jpg" media="(max-width:2880px)" type="image/svg+xml">
-                    <img src="images/gallery-3.jpg" class="img-fluid img-thumbnail  align-self-end" alt="chrome-hand-2">
+                    <img src="images/gallery-3.jpg" class="img-fluid img-thumbnail  align-self-end mb-5" alt="chrome-hand-2">
                   </picture>
                 </div>
               </div>
@@ -143,14 +148,14 @@
           </div>
         </div>
         <!-- portfolio section -->
-        <div class="portfolio-section container-fluid">
+        <div class="portfolio-section">
           <div class="portfolio-container container-sm"></div>
           <div class="vision row no-gutters g-0 container-fluid">
-            <div class="vision-content col-8 bg-black">
+            <div class="vision-content col-8 bg-black" data-aos="fade-right">
               <h1 class="text-light mt-4 display-1 mx-3">VISION</h1>
               <p class="text-light mt-5 p">My vision is to positively impact people's lives through my passion. I consistently refine my art, staying abreast of modern design standards while remaining true to my artistic roots. Each day, I strive to sculpt my design style, aiming to offer a diverse range of artistic expressions to like-minded individuals who share my passion.</p>
             </div>
-            <div class="vision-image col-4 img-fluid">
+            <div class="vision-image col-4 img-fluid" data-aos="flip-up" data-aos-duration="1000">
               <picture>
                 <source srcset="images/visionball-derivatives/visionball-320_x_320.jpg" media="(max-width: 320px)" type="image/svg+xml">
                 <source srcset="images/visionball-derivatives/visionball-480_x_480.jpg" media="(max-width: 480px)" type="image/svg+xml">
@@ -165,7 +170,7 @@
             </div>
           </div>
           <div class="explore-and-portfolio explore row no-gutters g-0">
-            <div class="explore-image col-md-6">
+            <div class="explore-image col-md-6" data-aos="flip-up" data-aos-duration="1000">
               <picture>
                 <source srcset="images/portfolio-derivatives/portfolio-320_x_480.jpg" media="(max-width: 320px)" type="image/svg+xml">
                 <source srcset="images/portfolio-derivatives/portfolio-480_x_720.jpg" media="(max-width: 480px)" type="image/svg+xml">
@@ -182,29 +187,29 @@
                <div class="explore-container container">
               </div> 
               <div class="explore-row row align-items-start g-0">
-                <div class="ready-to-roll">
+                <div class="ready-to-roll" data-aos="fade-left">
                   <h1 class="text-center display-4 mt-4">READY TO ROLL?</h1>
                   <h2 class="text-end mx-5 mt-4">Check my portfolio.</h2>
                 </div>
-                <div class="content-second mb-5">
+                <div class="content-second mb-5" data-aos="fade-left">
                   <h1 class="align-self-start text-center">There is always the latent power of <br> talent waiting to be discovered and <br>harnessed for improvement.</h1>
                   <div class="explore-more-button d-flex justify-content-center mt-5">
-                    <button class="bg-white mt-5 px-5 pt-4 pb-4  border border-4 border-black rounded-4 bold">EXPLORE MORE</button>
+                    <button class="mt-5 px-5 pt-4 pb-4 rounded-4"><a href="work.html">EXPLORE MORE</a></button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
           <!-- contact page link section -->
-          <div class="journey text-center pt-5 purple-section">
-            <div class="h1-line-1">
+          <div class="journey text-center purple-section container-fluid">
+            <div class="h1-line-1" data-aos="zoom-in">
               <h1>ARE YOU READY TO EMBARK ON <br>AN EXCITING JOURNEY?</h1>
             </div>
             <div class="journey-button">
-              <button class="lets-connect-button bg-white mt-5 px-5 pt-4 pb-4  border border-4 border-black">LET'S CONNECT</button>
+              <button class="lets-connect-button mt-5 px-5 pt-4 pb-4"><a href="about.html">LET'S CONNECT</a></button>
             </div>
           </div>
-        </div>
       </section>
     </main>
     <footer class="container-fluid grey-section">
@@ -254,5 +259,9 @@
         searchForm.style.display = (searchForm.style.display === 'none' || searchForm.style.display === '') ? 'block' : 'none';
     }
     </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>

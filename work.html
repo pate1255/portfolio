@@ -30,11 +30,21 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header class="w-100 main-header">
+    <div>
+      <ul class="skip-links-work">
+          <li><a href="#navbar-links">Move to Navigation bar</a></li>
+          <li><a href="#work-1">Move to work-1 section</a></li>
+          <li><a href="#work-2">Move to work-2 section</a></li>
+          <li><a href="#connect-section">Move to contact page link section</a></li>
+          <li><a href="#footer-section">Move to footer section</a></li>   
+      </ul>
+    </div>
+    <header id="top">
         <!-- logo display -->
         <img src="images/logo.png" alt="logo" class="position-absolute position-absolute top-0 start-0 m-2">
         <!-- navigation bar -->
-        <ul class="nav justify-content-end position-absolute top-0 end-0 px-2 pt-2">
+        <nav id="navbar-links">
+          <ul class="nav justify-content-end position-absolute top-0 end-0 px-2 pt-2">
             <li class="nav-item-work">
               <a class="nav-link" href="index.html">HOME</a>
             </li>
@@ -49,11 +59,14 @@
             </li>
             <!-- search section -->
             <li>
-              <div class="search-container">
-                <button class="btn btn-primary search-btn" onclick="toggleSearchForm()">Open Search</button>
-              </div>
+              <form class="d-flex" role="search">
+                <input class="form-control text-bg-light rounded-0" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary rounded-0" type="submit"><i class="bi bi-search"></i></button>
+              </form>
+            </div>
             </li>
           </ul>
+        </nav>
         <div class="bg vh-100 overflow-hidden">
             <img src="images/white-bg.png" alt="">
         </div>
@@ -72,7 +85,7 @@
               <div class="content-1 d-flex flex-column mt-5 black-section container-fluid">
                 <span class="content-1-border border border-3 border-top border-primary me-auto ps-5 custom-spacer"></span>
                 <div class="container mt-4">
-                <div class="row">
+                <div class="row" id="work-1">
                   <!-- Image on the left -->
                     <div class="col-md-6 image-container" data-aos="fade-up-right">
                       <picture>
@@ -103,7 +116,7 @@
         <div class="content-2 d-flex flex-column mt-5 black-section">
           <span class="content-1-border border border-3 border-top border-primary ms-auto ps-5 custom-spacer"></span>
             <div class="container mt-4">
-                <div class="row">
+                <div class="row" id="work-2">
                     <!-- Image on the left -->
                     <div class="justplay-heading col-md-6 image-container text-end ">
                         <h2>2. JUSTPLAY</h2>
@@ -130,7 +143,7 @@
             
         </div>
     </section>
-        <div class="love-it purple-section">
+        <div class="love-it purple-section" id="connect-section">
             <div class="love-it-heading" data-aos="zoom-in-down" data-aos-duration="1000"><h1 class="text-center">LOVE IT?</h1></div>
             <div class="happy-to-hear mb-5" data-aos="zoom-in-up" data-aos-duration="1000"><h2 class="text-center">Would be <br> happy to hear from you!</h2></div>
             <div class="row">
@@ -141,7 +154,7 @@
         </div>
         
     </main>
-    <footer class="container-fluid grey-section">
+    <footer class="container-fluid grey-section" id="footer-section">
         <div class="footer-row row">
           <div class="footer-heading col-8">
             <h1 class="display-1">Desinging is a <br><span class="lifestyle-word">lifestyle.</span></h1>
@@ -167,6 +180,7 @@
         <div class="footer-bottom-row row">
           <div class="copyright col-6 align-self-end text-start">
             <h2 class="text-start">© Dhruvi Patel, 2023</h2>
+            <a href="#top">Move to Top</a>
           </div>
           <div class="social-profiles col-6">
             <div class="social-heading"><h1 class="text-end">Checkout My Social Profiles</h1></div>

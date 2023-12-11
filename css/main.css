@@ -1,9 +1,37 @@
 :root{
     --custom1-font-1: 'Playfair Display', serif;
     --custom2-font-2: 'Raleway', sans-serif;
+    
 }
 
+/* -----skip links--------------- */
+.skip-links-home{
+    margin: auto;
+    padding: 0px;
+}
+/* styling skip links for the accessibility */
 
+.skip-links-home li{
+    list-style: none;
+}
+/* removing the list style from skip links */
+.skip-links-home a{
+    position: absolute;
+    top: -100px;
+    right: 50rem;
+    font-size: 20px;
+    text-decoration: none;
+    background-color:white;
+    font-family:var(--font-family-3);
+    color: var(--custom-color-5);
+    padding: 15px;
+    font-weight: bold;
+} 
+/* styling skip links content to match the website concept */
+
+.skip-links-home a:focus{
+    top: 0;
+} 
 .gallery-heading h1{
     color: black; /* Text color of the heading */
     text-align: center;
@@ -167,10 +195,46 @@
     width: auto;
 }
 
+.copyright a{
+    font-family: var(--custom1-font-1);
+    font-weight: 600;
+    color:white;
+    text-decoration: none;
+}
+
 
 
 
 /* -------About--------------------------- */
+
+/* -----skip links--------------- */
+.skip-links-about{
+    margin: auto;
+    padding: 0px;
+}
+/* styling skip links for the accessibility */
+
+.skip-links-about li{
+    list-style: none;
+}
+/* removing the list style from skip links */
+.skip-links-about a{
+    position: absolute;
+    top: -100px;
+    right: 50rem;
+    font-size: 20px;
+    text-decoration: none;
+    background-color:white;
+    font-family:var(--custom2-font-2);
+    color: black;
+    padding: 15px;
+    font-weight: bold;
+} 
+/* styling skip links content to match the website concept */
+
+.skip-links-about a:focus{
+    top: 0;
+} 
 
 .header-content h1{
     font-family: var(--custom2-font-2);
@@ -182,12 +246,14 @@
     font-family: var(--custom1-font-1);
     font-weight: 800;
     font-size: 8rem;
+    color: black;
 }
 
 .lets-lead h2{
     font-family: var(--custom1-font-1);
     font-style: italic;
     font-size: 3rem;
+    color: #9A969C;
 }
 
 .content-1 p{
@@ -206,7 +272,23 @@
     
 } */
 
+.content-1-border{
+    border-top: 2px solid #9524E5;
+}
+
 /* ------------------navigation--------------- */
+
+/* ------------------home-------------- */
+.nav-item-home a{
+    font-family: var(--custom1-font-1);
+    font-weight: 700;
+    color: black;
+}
+
+.nav-item-home a:hover{
+    color: #9524E5;
+}
+
 
 /* --------------------contact-------------- */
 .nav-item-contact a{
@@ -281,6 +363,34 @@
     font-size: 5rem;
 }
 
+/* -----skip links--------------- */
+.skip-links-contact{
+    margin: auto;
+    padding: 0px;
+}
+/* styling skip links for the accessibility */
+
+.skip-links-contact li{
+    list-style: none;
+}
+/* removing the list style from skip links */
+.skip-links-contact a{
+    position: absolute;
+    top: -100px;
+    right: 50rem;
+    font-size: 20px;
+    text-decoration: none;
+    background-color:white;
+    font-family:var(--custom2-font-2);
+    color: black;
+    padding: 15px;
+    font-weight: bold;
+} 
+/* styling skip links content to match the website concept */
+
+.skip-links-contact a:focus{
+    top: 0;
+} 
 
 /* ---------work-----------*/
 
@@ -333,6 +443,35 @@
     font-weight: 800; 
     padding: 1rem 2.5rem 1rem 2.5rem;
 }
+
+/* -----skip links--------------- */
+.skip-links-work{
+    margin: auto;
+    padding: 0px;
+}
+/* styling skip links for the accessibility */
+
+.skip-links-work li{
+    list-style: none;
+}
+/* removing the list style from skip links */
+.skip-links-work a{
+    position: absolute;
+    top: -100px;
+    right: 50rem;
+    font-size: 20px;
+    text-decoration: none;
+    background-color:black;
+    font-family:var(--custom2-font-2);
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+} 
+/* styling skip links content to match the website concept */
+
+.skip-links-work a:focus{
+    top: 0;
+} 
 
 /* ------footer------- */
 .footer-heading h1{

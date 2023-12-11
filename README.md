@@ -11,7 +11,15 @@ It was a good learning experience, I get to work with.....
 
 ## Frameworks and Libraries 
 - [Bootstrap](https://getbootstrap.com/)
--[GliderJS](https://glidejs.com/)
+- [GliderJS](https://glidejs.com/)
+- [AnimateOnScroll](https://michalsnik.github.io/aos/)
+- [Animate.css](https://animate.style/)
 
 ## External Resources
-- [PlayfairDisplay]
+-> From Google Fonts
+- [PlayfairDisplay](https://fonts.google.com/specimen/Playfair+Display?query=playfair)
+- [Raleway](https://fonts.google.com/specimen/Raleway?query=raleway)
+
+-> Stock Images Credits
+- [Unsplash](https://unsplash.com/)
+- [Pinterest](https://www.pinterest.ca/)

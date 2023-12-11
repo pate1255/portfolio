@@ -26,7 +26,7 @@
       }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -39,40 +39,40 @@
           <li><a href="#footer-section">Move to footer section</a></li>   
       </ul>
     </div>
-    <header id="top">
+    <header id="top" role="banner">
         <!-- logo display -->
         <img src="images/logo.png" alt="logo" class="position-absolute position-absolute top-0 start-0 m-2">
         <!-- navigation bar -->
-        <nav id="navbar-links">
+        <nav id="navbar-links" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
           <ul class="nav justify-content-end position-absolute top-0 end-0 px-2 pt-2">
-            <li class="nav-item-work">
+            <li class="nav-item-work" itemprop="url">
               <a class="nav-link" href="index.html">HOME</a>
             </li>
-            <li class="nav-item-work">
+            <li class="nav-item-work" itemprop="url">
               <a class="nav-link" href="about.html">ABOUT</a>
             </li>
-            <li class="nav-item-work">
+            <li class="nav-item-work" itemprop="url">
               <a class="nav-link" href="contact.html">CONTACT</a>
             </li>
-            <li class="nav-item-work">
+            <li class="nav-item-work" itemprop="url">
               <a class="nav-link" href="work.html">WORK</a>
             </li>
             <!-- search section -->
             <li>
               <form class="d-flex" role="search">
                 <input class="form-control text-bg-light rounded-0" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary rounded-0" type="submit"><i class="bi bi-search"></i></button>
+                <button class="btn btn-outline-primary rounded-0" type="submit" role="button"><i class="bi bi-search"></i></button>
               </form>
-            </div>
             </li>
           </ul>
         </nav>
         <div class="bg vh-100 overflow-hidden">
-            <img src="images/white-bg.png" alt="">
+          <img src="images/white-bg.png" alt="white-bg">
         </div>
-        <div class="header-content-work" >
-        <div class="position-absolute bottom-0 end-0 animate__animated animate__fadeInRight">
+        <div class="header-content-work">
+          <div class="position-absolute bottom-0 end-0 animate__animated animate__fadeInRight">
             <h1 class="text-dark">GALLERY SPACE</h1>
+          </div>
         </div>
     </header>
     <main >
@@ -82,7 +82,7 @@
                 <h1 class="text-end">DIVE IN !</h1>
                 <h2 class="text-end pt-4">A Visual Symphony <br> of Accomplishments</h2>
               </div>
-              <div class="content-1 d-flex flex-column mt-5 black-section container-fluid">
+              <div class="content-1 d-flex flex-column mt-5 black-section container-fluid" aria-label="work-1">
                 <span class="content-1-border border border-3 border-top border-primary me-auto ps-5 custom-spacer"></span>
                 <div class="container mt-4">
                 <div class="row" id="work-1">
@@ -113,7 +113,7 @@
               I meticulously crafted the fonts using the pen tool and built the entire illustration from scratch. The car featured in the artwork adds depth and interest to the plot, and I thoroughly enjoyed the challenge of creating something truly unique and fun. Overall, this piece is a testament to my passion for illustration and my dedication to pushing myself creatively.</p>
             </div>
         </div>
-        <div class="content-2 d-flex flex-column mt-5 black-section">
+        <div class="content-2 d-flex flex-column mt-5 black-section" aria-label="work-2">
           <span class="content-1-border border border-3 border-top border-primary ms-auto ps-5 custom-spacer"></span>
             <div class="container mt-4">
                 <div class="row" id="work-2">
@@ -148,13 +148,14 @@
             <div class="happy-to-hear mb-5" data-aos="zoom-in-up" data-aos-duration="1000"><h2 class="text-center">Would be <br> happy to hear from you!</h2></div>
             <div class="row">
                 <div class="journey-button text-center">
-                  <button class="lets-connect-button mt-5 px-5 pt-4 pb-4"><a href="about.html">LET'S CONNECT</a></button>
+                  <button class="lets-connect-button mt-5 px-5 pt-4 pb-4" role="button">
+                    <a href="about.html">LET'S CONNECT</a></button>
                 </div>
             </div>
         </div>
         
     </main>
-    <footer class="container-fluid grey-section" id="footer-section">
+    <footer class="container-fluid grey-section" id="footer-section" role="contentinfo">
         <div class="footer-row row">
           <div class="footer-heading col-8">
             <h1 class="display-1">Desinging is a <br><span class="lifestyle-word">lifestyle.</span></h1>
@@ -184,10 +185,10 @@
           </div>
           <div class="social-profiles col-6">
             <div class="social-heading"><h1 class="text-end">Checkout My Social Profiles</h1></div>
-            <div class="social-icons d-flex justify-content-end">
-              <div class="instagram px-3"><img src="images/instagram.png" alt="instagram" class="w-1"></div>
-              <div class="linkedin px-2"><img src="images/linked-in.png" alt="linked-in"></div>
-              <div class="facebook px-3"><img src="images/twitter.png" alt="facebook"></div>
+            <div class="social-icons d-flex justify-content-end" itemscope itemtype="http://schema.org/Organization">
+              <div class="instagram px-3"><img src="images/instagram.png" alt="instagram" class="w-1" itemprop="url"></div>
+              <div class="linkedin px-2"><img src="images/linked-in.png" alt="linked-in" itemprop="url"></div>
+              <div class="facebook px-3"><img src="images/twitter.png" alt="facebook" itemprop="url"></div>
             </div>
           </div>
         </div>
